@@ -7,6 +7,8 @@ import Contact from './FunctionComponent/Contact';
 import Signup from './FunctionComponent/Signup';
 import Gallery from './FunctionComponent/Gallery';
 import Login from './FunctionComponent/Login';
+import UseState from './FunctionComponent/Hooks/UseState';
+import UseEffect from './FunctionComponent/Hooks/UseEffect';
 
 
 function App() {
@@ -18,8 +20,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/usestate" element={<UseState />} />
+        <Route path="/useeffect" element={<UseEffect />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+
       </Routes>
     </BrowserRouter>
   );
