@@ -26,14 +26,17 @@ const Navbar = () => {
                     {dropdown && (
                     <ul>
                         <li><Link to="/useState" target='_blank'>useState</Link></li>
-                        <li>useEffect</li>
+                        <li><Link to="/useEffect" target='_blank'>useEffect</Link></li>
+                        <li><Link to="/useEffectAPI" target='_blank'>useEffectAPI</Link></li>
+                        <li><Link to="/useEffectAPIimage" target='_blank'>useEffectAPIimage</Link></li>
+                        <li><Link to="/useReducer" target='_blank'>useReducer</Link></li>
+                        <li><Link to="/useRef" target='_blank'>useRef</Link></li>
                     </ul>)}
                     </div>
                     <li><Link to="/sign-up" className='link'>Sign-up</Link></li>
                     <li><Link to="/login" className='link'>Login</Link></li>
                     <li><Link to="/logout" className='link'>Logout</Link></li>
-                    <li><Link to="/usestate" className='link'>UseState</Link></li>
-                    <li><Link to="/useeffect" className='link'>UseEffect</Link></li>
+                    
                     
                 </ol>
             </nav>

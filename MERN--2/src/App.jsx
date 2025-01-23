@@ -12,6 +12,10 @@ import UseEffect from './FunctionComponent/Hooks/UseEffect';
 import UseEffectAPI from './FunctionComponent/Hooks/UseEffectAPI';
 import UseEffectAPIimage from './FunctionComponent/Hooks/UseEffectAPIimage';
 import UseReducer from './FunctionComponent/Hooks/UseReducer';
+import UseRef from './FunctionComponent/Hooks/UseRef';
+import UseMemo from './FunctionComponent/Hooks/UseMemo';
+import UseCallback from './FunctionComponent/Hooks/UseCallback';
+import ListItem from './FunctionComponent/Hooks/List';
 
 function App() {
   return (
@@ -29,6 +33,10 @@ function App() {
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/usereducer" element={<UseReducer />} />
+        <Route path="/useref" element={<UseRef />} />
+        <Route path="/usememo" element={<UseMemo />} />
+        <Route path="/usecallback" element={<UseCallback />} />
+        <Route path="/list" element={<ListItem />} />
 
 
       </Routes>
