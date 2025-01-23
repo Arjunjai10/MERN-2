@@ -9,7 +9,7 @@ import Gallery from './FunctionComponent/Gallery';
 import Login from './FunctionComponent/Login';
 import UseState from './FunctionComponent/Hooks/UseState';
 import UseEffect from './FunctionComponent/Hooks/UseEffect';
-
+import UseEffectAPI from './FunctionComponent/Hooks/UseEffectAPI';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/usestate" element={<UseState />} />
         <Route path="/useeffect" element={<UseEffect />} />
+        <Route path="/useeffectapi" element={<UseEffectAPI />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
 
