@@ -1,47 +1,78 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css';
-import { useState } from 'react';
 
 const Navbar = () => {
-    var styling = { 
-        textDecoration: "none", 
-        listStyleType: "none", 
-        textAlign: "center"
-    };
-    var [dropdown,showDropdown] = useState(true)
-    const toggleDrop = () => {
-        showDropdown(dropdown = !dropdown)
-    }
-    return (
-        <header>
-            <nav>   
-                <ol style={styling}>
-                    <li><Link to="/" className='link'>Home</Link></li>
-                    <li><Link to="/about" className='link'>About</Link></li>
-                    <li><Link to="/gallery" className='link'>Gallery</Link></li>
-                    <li><Link to="/contact" className='link'>Contact</Link></li>
-                    <li><Link to="/sign-up" className='link'>Sign-up</Link></li>
-                    <li><Link to="/login" className='link'>Login</Link></li>
+  const [dropdown, setDropdown] = useState(false);
 
-                    <div>
-                    <span onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>Hooks</span>
-                    {dropdown && (
-                    <ul>
-                        <li><Link to="/useState" >UseState</Link></li>
-                        <li><Link to="/useeffect" >UseEffect</Link></li>
-                        <li><Link to="/usecallback">UseCallback</Link></li>
-                        <li><Link to="/useeffectapi" >UseEffectAPI</Link></li>
-                        <li><Link to="/useeffectimage" >UseEffectAPIimage</Link></li>
-                        <li><Link to="/usereducer" >UseReducer</Link></li>
-                        <li><Link to="/useref" >UseRef</Link></li>
-                        <li><Link to="/usememo" >UseMemo</Link></li>
-                        <li><Link to="/list" >List</Link></li>
-                    </ul>)}
-                    </div>
-                </ol>
-            </nav>
-        </header>
-    );
+  const toggleDrop = () => {
+    setDropdown(!dropdown);
+  };
+
+  return (
+    <header className="navbar-header">
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <Link to="/" className="navbar-link">Home</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/about" className="navbar-link">About</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/gallery" className="navbar-link">Gallery</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/contact" className="navbar-link">Contact</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/sign-up" className="navbar-link">Sign-Up</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/login" className="navbar-link">Login</Link>
+          </li>
+          <li
+            className="navbar-item dropdown"
+            onMouseEnter={toggleDrop}
+            onMouseLeave={toggleDrop}
+          >
+            <span className="dropdown-toggle">Hooks</span>
+            {dropdown && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-item">
+                  <Link to="/useState" className="dropdown-link">UseState</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/useeffect" className="dropdown-link">UseEffect</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/usecallback" className="dropdown-link">UseCallback</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/useeffectapi" className="dropdown-link">UseEffectAPI</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/useeffectimage" className="dropdown-link">UseEffectAPIimage</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/usereducer" className="dropdown-link">UseReducer</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/useref" className="dropdown-link">UseRef</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/usememo" className="dropdown-link">UseMemo</Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/list" className="dropdown-link">List</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
+
 export default Navbar;
