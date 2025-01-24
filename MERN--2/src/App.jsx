@@ -16,6 +16,11 @@ import UseRef from './FunctionComponent/Hooks/UseRef';
 import UseMemo from './FunctionComponent/Hooks/UseMemo';
 import UseCallback from './FunctionComponent/Hooks/UseCallback';
 import ListItem from './FunctionComponent/Hooks/List';
+import ReactLifecycleMethods from './component/ReactLifecycleMethods';
+import Student from './FunctionComponent/Hooks/Student';
+import Memo from './FunctionComponent/Memorization/Memo';
+
+
 
 function App() {
   return (
@@ -37,6 +42,9 @@ function App() {
         <Route path="/usememo" element={<UseMemo />} />
         <Route path="/usecallback" element={<UseCallback />} />
         <Route path="/list" element={<ListItem />} />
+        <Route path="/reactlifecyclemethods" element={<ReactLifecycleMethods />} />
+        <Route path="/student" element={<Student />} />
+        <Route path="/memo" element={<Memo />} />
 
 
       </Routes>

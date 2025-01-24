@@ -39,33 +39,18 @@ const Navbar = () => {
             <span className="dropdown-toggle">Hooks</span>
             {dropdown && (
               <ul className="dropdown-menu">
-                <li className="dropdown-item">
-                  <Link to="/useState" className="dropdown-link">UseState</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/useeffect" className="dropdown-link">UseEffect</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/usecallback" className="dropdown-link">UseCallback</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/useeffectapi" className="dropdown-link">UseEffectAPI</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/useeffectapiimage" className="dropdown-link">UseEffectAPIimage</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/usereducer" className="dropdown-link">UseReducer</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/useref" className="dropdown-link">UseRef</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/usememo" className="dropdown-link">UseMemo</Link>
-                </li>
-                <li className="dropdown-item">
-                  <Link to="/list" className="dropdown-link">List</Link>
-                </li>
+                <li className="dropdown-item"><Link to="/useState" className="dropdown-link">UseState</Link></li>
+                <li className="dropdown-item"><Link to="/useeffect" className="dropdown-link">UseEffect</Link></li>
+                <li className="dropdown-item"><Link to="/usecallback" className="dropdown-link">UseCallback</Link></li>
+                <li className="dropdown-item"><Link to="/useeffectapi" className="dropdown-link">UseEffectAPI</Link></li>
+                <li className="dropdown-item"><Link to="/useeffectapiimage" className="dropdown-link">UseEffectAPIimage</Link></li>
+                <li className="dropdown-item"><Link to="/usereducer" className="dropdown-link">UseReducer</Link></li>
+                <li className="dropdown-item"><Link to="/useref" className="dropdown-link">UseRef</Link></li>
+                <li className="dropdown-item"><Link to="/usememo" className="dropdown-link">UseMemo</Link></li>
+                <li className="dropdown-item"><Link to="/list" className="dropdown-link">List</Link></li>
+                <li className="dropdown-item"><Link to="/reactlifecyclemethods" className="dropdown-link">ReactLifecycleMethods</Link></li>
+                <li className="dropdown-item"><Link to="/student" className="dropdown-link">Student</Link></li> 
+                <li className="dropdown-item"><Link to="/memo" className="dropdown-link">Memo</Link></li> 
               </ul>
             )}
           </li>
