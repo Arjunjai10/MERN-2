@@ -52,7 +52,7 @@ const Navbar = () => {
                   <Link to="/useeffectapi" className="dropdown-link">UseEffectAPI</Link>
                 </li>
                 <li className="dropdown-item">
-                  <Link to="/useeffectimage" className="dropdown-link">UseEffectAPIimage</Link>
+                  <Link to="/useeffectapiimage" className="dropdown-link">UseEffectAPIimage</Link>
                 </li>
                 <li className="dropdown-item">
                   <Link to="/usereducer" className="dropdown-link">UseReducer</Link>
