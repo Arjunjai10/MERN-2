@@ -31,6 +31,8 @@ const Navbar = () => {
           <li className="navbar-item">
             <Link to="/login" className="navbar-link">Login</Link>
           </li>
+          
+          
           <li
             className="navbar-item dropdown"
             onMouseEnter={toggleDrop}
@@ -51,11 +53,14 @@ const Navbar = () => {
                 <li className="dropdown-item"><Link to="/reactlifecyclemethods" className="dropdown-link">ReactLifecycleMethods</Link></li>
                 <li className="dropdown-item"><Link to="/student" className="dropdown-link">Student</Link></li> 
                 <li className="dropdown-item"><Link to="/memo" className="dropdown-link">Memo</Link></li> 
+                <li><Link to='/lazy' className="link">Suspense</Link></li>
               </ul>
             )}
           </li>
+          
         </ul>
       </nav>
+      
     </header>
   );
 };
